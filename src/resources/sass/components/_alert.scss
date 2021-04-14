@@ -1,0 +1,74 @@
+// [-] Alert Styles [-] //
+
+// -- Alert -- //
+.alert {
+    bottom: 5%;
+    opacity: 1;
+    right: 40px;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    user-select: none;
+    align-items: center;
+    box-shadow: $boxshadow;
+    background-color: $white;
+    transition: all 0.5s ease-in-out;
+
+    .icon {
+        font-size: 20px;
+        margin-right: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .close-icon {
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        color: rgba($black, 0.4);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    &.hide {
+        opacity: 0;
+    }
+}
+
+/* Alert Success */
+.alert-success {
+    border-left: 4px solid $success;
+
+    .icon {
+        color: $success;
+    }
+}
+
+/* Alert Warning */
+.alert-warning {
+    border-left: 4px solid $warning;
+
+    .icon {
+        color: $warning;
+    }
+}
+
+/* Alert Danger */
+.alert-danger {
+    border-left: 4px solid $danger;
+
+    .icon {
+        color: $danger;
+    }
+}
+
+/* Alert Info */
+.alert-info {
+    border-left: 4px solid $info;
+
+    .icon {
+        color: $info;
+    }
+}

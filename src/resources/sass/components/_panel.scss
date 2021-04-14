@@ -1,0 +1,20 @@
+// [-] Panel Styles [-] //
+
+// -- Panel -- //
+.panel {
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: $boxshadow;
+    background-color: $white;
+
+    .panel-heading {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba($black, 0.1);
+    }
+
+    &:first-of-type {
+        margin-top: 0px;
+    }
+}

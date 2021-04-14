@@ -1,0 +1,19 @@
+// [-] Reset Styles [-] //
+
+// -- All -- //
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// -- Link -- //
+a {
+    text-decoration: none;
+}
+
+// -- UL & OL -- //
+ul,
+ol {
+    list-style: none;
+}

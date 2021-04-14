@@ -1,0 +1,55 @@
+// [-] Mixin Styles [-] //
+
+// -- Center -- //
+@mixin center {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    align-items: center;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+// -- Space Between -- //
+@mixin space-between {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    align-items: center;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+// -- Border Radius -- //
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+// -- Grid -- //
+@mixin grid {
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+// -- Media Queries -- //
+
+/* Inspiration Video: https://www.youtube.com/watch?v=qEZAKu09FgM */
+
+@mixin breakpoint ($point) {
+    @if ($point == mobile) {
+        @media screen and (max-width: 320px) { @content; }
+    } @else if ($point == laptop) {
+        @media screen and (max-width: 768px) { @content; }
+    } @else if ($point == dekstop) {
+        @media screen and (max-width: 1224px) { @content; }
+    } @else if ($point == largescreens) {
+        @media screen and (max-width: 1824px) { @content; }
+    }
+}

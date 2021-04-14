@@ -1,0 +1,28 @@
+// [-] Variable Styles [-] //
+
+// -- Colors -- //
+$white:                 #FFFFFF;
+$black:                 #000000;
+
+/* Usage Names */
+$link:                  #FFFFFF;        // <-- Change To Own Color
+$primary:               #FFFFFF;        // <-- Change To Own Color
+$secondary:             #FFFFFF;        // <-- Change To Own Color
+$background:            #000000;        // <-- Change To Own Color
+
+/* Alert Colors */
+$info:                  #0DCAF0;        // <-- Change To Own Color (Default Blue )
+$danger:                #DC3545;        // <-- Change To Own Color (Default Red )
+$warning:               #FFC107;        // <-- Change To Own Color (Default Yellow )
+$success:               #198754;        // <-- Change To Own Color (Default Green )
+
+// -- Font -- //
+$font:                  'Source Sans Pro', sans-serif;
+
+// -- Borders -- //
+$border1:               2px solid rgba($black, 0.3);
+$border2:               2px solid rgba($secondary, 1);
+$borderError:           2px solid rgba($danger, 1);
+
+// -- Boxshadow -- //
+$boxshadow:             0px 0px 60px rgba($black, 0.25);

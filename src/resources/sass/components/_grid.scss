@@ -1,0 +1,83 @@
+// [-] Grid Styles [-] //
+
+// -- Grid -- //
+.grid {
+    @include grid;
+    margin-top: 20px;
+
+    &:first-of-type {
+        margin-top: 0px;
+    }
+}
+
+/* Grid Column Gap 20 PX */
+.grid-col-gap-2 {
+    grid-column-gap: 20px;
+}
+
+/* Grid Column Gap 40 PX */
+.grid-col-gap-4 {
+    grid-column-gap: 40px;
+}
+
+/* Grid Column Gap 60 PX */
+.grid-col-gap-6 {
+    grid-column-gap: 60px;
+}
+
+/* Grid Row Gap 20 PX */
+.grid-row-gap-2 {
+    grid-row-gap: 20px;
+}
+
+/* Grid Row Gap 40 PX */
+.grid-row-gap-4 {
+    grid-row-gap: 40px;
+}
+
+/* Grid Row Gap 60 PX */
+.grid-row-gap-6 {
+    grid-row-gap: 60px;
+}
+
+/* Grid For Sidebar */
+.grid-sidebar {
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 360px !important;
+}
+
+/* One Column */
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+
+/* Two Columns */
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* Three Columns */
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Four Columns */
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Five Columns */
+.grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr) !important;
+}
+
+/* Six Columns */
+.grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr) !important;
+}
+
+/* Auto Columns */
+.grid-cols-auto {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: auto;
+}

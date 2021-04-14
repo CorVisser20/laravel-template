@@ -1,0 +1,26 @@
+{
+    "name": "corvisser/laravel-template",
+    "description": "This package adds a scaffholding for SCSS and Views files. This way you don't have to add them manually.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cor Visser",
+            "email": "cor@corvisser.info"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Cor\\LaravelTemplate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cor\\LaravelTemplate\\LaravelTemplateServiceProvider"
+            ]
+        }
+    }
+}
