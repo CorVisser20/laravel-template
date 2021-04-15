@@ -12,18 +12,18 @@ class LaravelTemplateServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole())
         {
-            // Load Routes //
-            $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-
-            // Load Views //
-            $this->loadViewsFrom(__DIR__ . '/resources/views', 'laravel-template');
-
             // Delete Files //
             File::delete(base_path('webpack.mix.js'));
 
             // Register Publishing //
             $this->registerPublishing();
         }
+
+        // Load Routes //
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
+        // Load Views //
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'laravel-template');
 
     }
 
@@ -42,7 +42,7 @@ class LaravelTemplateServiceProvider extends ServiceProvider
             __DIR__ . '/resources/lang' => resource_path('lang'),
             __DIR__ . '/resources/sass' => resource_path('sass'),
             __DIR__ . '/resources/views' => resource_path('views'),
-            __DIR__ . '/webpack.mix.js' => base_path('webpack.mix.js'),
+            __DIR__ . '/webpack.mix.js' => base_path('/webpack.mix.js'),
             __DIR__ . '/routes/web.php' => base_path('routes/web.php')
         ], 'laravel-template');
     }
